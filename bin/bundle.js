@@ -89,13 +89,9 @@
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    'p',
+	                    'h2',
 	                    null,
-	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'Money Converter'
-	                    )
+	                    'Money Converter'
 	                ),
 	                _react2.default.createElement(_ConverterComponent2.default, null)
 	            );
@@ -33528,7 +33524,7 @@
 	
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ConverterComponent).call(this, props));
 	
-	        _this.state = { fromCurrency: "EUR", toCurrency: "EUR", fromValue: "", toValue: "", currencies: ["EUR"] };
+	        _this.state = { fromCurrency: "EUR", toCurrency: "EUR", fromValue: "1", toValue: "", currencies: ["EUR"] };
 	        _this._getCurrencyList();
 	        return _this;
 	    }
@@ -33562,12 +33558,12 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'input-value' },
-	                    _react2.default.createElement('input', { type: 'text', value: this.state.fromValue, onChange: this._onInputChanged.bind(this) })
+	                    _react2.default.createElement('input', { type: 'numeric', value: this.state.fromValue, onChange: this._onInputChanged.bind(this) })
 	                ),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'input-value' },
-	                    _react2.default.createElement('input', { type: 'text', value: this.state.toValue, disabled: true })
+	                    _react2.default.createElement('input', { type: 'numeric', value: this.state.toValue, disabled: true })
 	                ),
 	                _react2.default.createElement(
 	                    'div',

@@ -8,9 +8,7 @@ class App extends React.Component {
   render () {
     return (
         <div>
-            <p>
-                <h2>Money Converter</h2>
-            </p>
+            <h2>Money Converter</h2>
             <ConverterComponent />
         </div>
     );

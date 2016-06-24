@@ -6,7 +6,7 @@ import CurrencySelectComponent from './CurrencySelectComponent';
 export default class ConverterComponent extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { fromCurrency: "EUR", toCurrency: "EUR", fromValue: "", toValue: "", currencies: ["EUR"] };
+        this.state = { fromCurrency: "EUR", toCurrency: "EUR", fromValue: "1", toValue: "", currencies: ["EUR"] };
         this._getCurrencyList();
     }
 
@@ -27,11 +27,11 @@ export default class ConverterComponent extends React.Component {
                 </div>
 
                 <div className="input-value">
-                    <input type="text" value={this.state.fromValue} onChange={this._onInputChanged.bind(this)} />
+                    <input type="numeric" value={this.state.fromValue} onChange={this._onInputChanged.bind(this)} />
                 </div>
 
                 <div className="input-value">
-                    <input type="text" value={this.state.toValue} disabled />
+                    <input type="numeric" value={this.state.toValue} disabled />
                 </div>
 
                 <div>
