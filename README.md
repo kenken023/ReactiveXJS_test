@@ -9,9 +9,11 @@ npm install;
 Running the application:
 
 ::For development
+
 npm run dev;
 
 :: For production
+
 npm run prod;
 
 :: Then open index.html in your favorite web browser
