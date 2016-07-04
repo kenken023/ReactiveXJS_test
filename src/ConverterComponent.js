@@ -63,7 +63,7 @@ export default class ConverterComponent extends React.Component {
 
     _onConvert() {
         if (isNaN(this.state.fromValue) || !this.state.fromValue) {
-            alert("Please iput a value to be converted.");
+            alert("Please input a value to be converted.");
             return;
         }
 
